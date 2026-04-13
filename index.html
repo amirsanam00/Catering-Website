@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Afghani Khowrak Catering offers authentic Afghan food for family gatherings, parties, and special occasions."
+  />
+  <title>Afghani Khowrak Catering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container top-bar">
+      <div class="brand">
+        <a href="#home" class="brand-logo">AK</a>
+        <div class="brand-text">
+          <h1>Afghani Khowrak Catering</h1>
+          <p>Authentic Afghan Catering for Family Gatherings, Events, and Special Occasions</p>
+        </div>
+      </div>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="home">
+      <div class="container home-content">
+        <div class="home-text">
+          <p class="eyebrow">Halal • Catering Trays • Pickup & Local Delivery</p>
+          <div class="home-actions">
+            <a class="btn btn-primary" href="#menu">View Menu</a>
+            <a class="btn btn-secondary" id="heroPhoneLink" href="#">Call / Text Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">About Us</p>
+          <h2>Welcome to Afghani Khowrak</h2>
+          <p>
+            We offer authentic Afghan catering for family meals, parties, community events,
+            and special occasions. Our focus is simple: halal and flavorful food, generous
+            portions, and a presentation that feels warm and inviting.
+          </p>
+        </div>
+
+        <div class="about-grid" id="aboutGrid"></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Our Menu</p>
+          <h2>Freshly Prepared Catering Favorites</h2>
+          <p>
+            Explore our Afghan specialties, catering trays, and additional menu options.
+          </p>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <div class="additional-options" id="additionalOptions"></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Gallery</p>
+          <h2>A Look at Our Food</h2>
+          <p>
+            Replace these with your actual food and catering photos. Real images will make
+            the website much stronger.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Contact</p>
+          <h2>Get in Touch</h2>
+          <p>
+            To ask about catering, tray sizes, current pricing, or availability, please call,
+            text, or email us directly.
+          </p>
+        </div>
+
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h3>Afghani Khowrak Catering</h3>
+        <p>Authentic Afghan food for parties, family gatherings, and special occasions.</p>
+      </div>
+
+      <div id="footerContact"></div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
