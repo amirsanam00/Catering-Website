@@ -21,42 +21,18 @@
   <header class="site-header" id="home">
     <div class="container top-bar">
       <div class="brand">
-        <a href="#home" class="brand-logo">AK</a>
         <div class="brand-text">
-          <h1>Afghani Khowrak Catering</h1>
-          <p>Authentic Afghan Catering for Family Gatherings, Events, and Special Occasions</p>
+          <h1>Afghani Khowrak</h1>
+          <p>Authentic Halal Afghan Catering</p>
         </div>
       </div>
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="siteNav"
-      >
-        ☰
-      </button>
 
       <nav class="site-nav" id="siteNav">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
         <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-    </div>
-
-    <div class="home">
-      <div class="container home-content">
-        <div class="home-text">
-          <p class="eyebrow">Halal • Catering Trays • Pickup & Local Delivery</p>
-          <div class="home-actions">
-            <a class="btn btn-primary" href="#menu">View Menu</a>
-            <a class="btn btn-secondary" id="heroPhoneLink" href="#">Call / Text Us</a>
-          </div>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -64,7 +40,6 @@
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-heading">
-          <p class="section-label">About Us</p>
           <h2>Welcome to Afghani Khowrak</h2>
           <p>
             We offer authentic Afghan catering for family meals, parties, community events,
@@ -82,13 +57,9 @@
         <div class="section-heading">
           <p class="section-label">Our Menu</p>
           <h2>Freshly Prepared Catering Favorites</h2>
-          <p>
-            Explore our Afghan specialties, catering trays, and additional menu options.
-          </p>
         </div>
 
         <div class="menu-grid" id="menuGrid"></div>
-
         <div class="additional-options" id="additionalOptions"></div>
       </div>
     </section>
@@ -97,11 +68,58 @@
       <div class="container">
         <div class="section-heading">
           <p class="section-label">Gallery</p>
-          <h2>A Look at Our Food</h2>
+          <h2>Our Food</h2>
           <p>
-            Replace these with your actual food and catering photos. Real images will make
-            the website much stronger.
+            A few of our Afghan catering favorites, including Kabuli Pulao, Bolani, Mantu, and Kebab.
           </p>
+        </div>
+
+        <div class="hero-image-card">
+          <div class="food-carousel">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide active">
+                <img
+                  src="./assets/images/kabuli-pulao.jpg"
+                  alt="Kabuli Pulao Afghan rice dish"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/bolani.jpg"
+                  alt="Bolani Afghan stuffed flatbread"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/mantu.jpg"
+                  alt="Mantu Afghan dumplings"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/chapli-kebab.jpg"
+                  alt="Chapli Kebab"
+                />
+              </div>
+            </div>
+
+            <button class="carousel-btn prev" id="prevSlide" aria-label="Previous slide">
+              ‹
+            </button>
+            <button class="carousel-btn next" id="nextSlide" aria-label="Next slide">
+              ›
+            </button>
+
+            <div class="carousel-dots" id="carouselDots">
+              <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+              <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+              <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+              <button class="dot" data-slide="3" aria-label="Go to slide 4"></button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -126,7 +144,9 @@
     <div class="container footer-content">
       <div>
         <h3>Afghani Khowrak Catering</h3>
-        <p>Authentic Afghan food for parties, family gatherings, and special occasions.</p>
+        <p>
+          Authentic Halal Afghan food for parties, family gatherings, and special occasions.
+        </p>
       </div>
 
       <div id="footerContact"></div>
@@ -135,8 +155,8 @@
 
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 
-  <script src="js/data.js"></script>
-  <script src="js/render.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/render.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

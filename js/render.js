@@ -65,17 +65,7 @@ function createContactCards(business) {
       <p><a href="${business.emailHref}">${business.emailDisplay}</a></p>
     </article>
 
-    <article class="contact-card">
-      <h3>Hours</h3>
-      <p>${business.hours}</p>
-    </article>
-
-    <article class="contact-card">
-      <h3>Menu PDF</h3>
-      <p>
-        <a href="${business.menuPdf}" target="_blank" rel="noopener">Open Menu</a>
-      </p>
-    </article>
+ 
   `;
 }
 

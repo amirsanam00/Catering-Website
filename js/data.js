@@ -22,14 +22,14 @@ const siteData = {
       title: "Custom Options",
       text: "Additional cuisine selections are available for select events based on menu needs and availability."
     },
-    {
-      title: "Halal Food",
-      text: "Our food is prepared using halal ingredients."
-    },
-    {
-      title: "Service Area",
-      text: "Serving Mercer County and surrounding areas."
-    },
+    // {
+    //   title: "Halal Food",
+    //   text: "Our food is prepared using halal ingredients."
+    // },
+    // {
+    //   title: "Service Area",
+    //   text: "Serving Mercer County and surrounding areas."
+    // },
     {
       title: "Important Note",
       text: "All menu availability, tray sizes, and current pricing can be confirmed by phone, text, or email."
@@ -144,12 +144,6 @@ const siteData = {
     {
       name: "Custom Menu Requests",
       description: "Additional cuisine options such as Pakistani, Mexican, and Asian may be available for select events and catering needs.",
-      label: "Ask"
-    },
-    {
-      name: "Event-Based Menus",
-      description: "We may offer other dishes depending on event type, guest needs, and menu planning.",
-      label: "Ask"
-    }
+       }
   ]
 };
