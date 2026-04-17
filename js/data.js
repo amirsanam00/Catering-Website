@@ -9,44 +9,21 @@ const siteData = {
     menuPdf: "assets/menu/afghani-khowrak-menu.pdf"
   },
 
-  about: [
-    {
-      title: "Our Specialty",
-      text: "Authentic Afghan dishes including Kabuli Pulao, mantu, bolani, kebabs, and traditional entrees."
-    },
-    {
-      title: "Catering Style",
-      text: "Catering trays, party platters, and event food prepared for both small and large gatherings."
-    },
-    {
-      title: "Custom Options",
-      text: "Additional cuisine selections are available for select events based on menu needs and availability."
-    },
-    // {
-    //   title: "Halal Food",
-    //   text: "Our food is prepared using halal ingredients."
-    // },
-    // {
-    //   title: "Service Area",
-    //   text: "Serving Mercer County and surrounding areas."
-    // },
-    {
-      title: "Important Note",
-      text: "All menu availability, tray sizes, and current pricing can be confirmed by phone, text, or email."
-    }
-  ],
-
   menuSections: [
     {
       title: "Appetizers",
       items: [
         {
           name: "Mantu",
-          description: "Afghan dumplings topped with sauce and garnish."
+          description: "Afghan dumplings filled with seasoned ground meat and onions, steamed and topped with tomato-yogurt sauce and garnish."
         },
         {
           name: "Bolani",
-          description: "Stuffed flatbread with a savory filling."
+          description: "Stuffed flatbread with a savory potato and leek/scallion filling and served with mint chutney."
+        },
+        {
+          name: "Shor Nakhod",
+          description: "Boiled chickpeas and potatoes served with a tangy spicy cilantro-vinegar dressing."
         }
       ]
     },
@@ -55,11 +32,19 @@ const siteData = {
       items: [
         {
           name: "Kabuli Pulao",
-          description: "Traditional Afghan rice with carrots, raisins, and tender meat."
+          description: "Basmati rice topped with caramelized carrots, raisins, and tender meat."
         },
         {
-          name: "Afghan Rice",
-          description: "Golden colored rice served with selected entrees."
+          name: "Traditional Afghan Rice",
+          description: "Basmati rice prepared with caramelized sugar and warm spices served with selected entrees."
+        },
+        {
+          name: "Zamarod Palaw",
+          description: "Basmati rice cooked with spinach and herbs, served with selected entrees."
+        },
+        {
+          name: "Chalau",
+          description: "Plain basmati rice cooked with warm spices, served with selected entrees."
         }
       ]
     },
@@ -68,7 +53,7 @@ const siteData = {
       items: [
         {
           name: "Chicken Qorma",
-          description: "Slow-cooked chicken in a rich Afghan-style sauce."
+          description: "Slow-cooked chicken in a rich Afghan-style spices and sauce."
         },
         {
           name: "Dopiaza",
@@ -80,7 +65,7 @@ const siteData = {
         },
         {
           name: "Borani Banjan",
-          description: "Fried eggplant in a rich Afghan-style sauce."
+          description: "Fried/roasted eggplant in a rich Afghan-style sauce."
         },
         {
           name: "Kado Borani",
@@ -118,32 +103,38 @@ const siteData = {
         }
       ]
     },
-    {
-      title: "Catering Trays",
-      items: [
-        {
-          name: "Small Tray",
-          description: "Ideal for smaller family gatherings.",
-          serving: "8–10"
-        },
-        {
-          name: "Medium Tray",
-          description: "Good for medium-sized events and parties.",
-          serving: "12–15"
-        },
-        {
-          name: "Large Tray",
-          description: "Best for larger gatherings and special occasions.",
-          serving: "18–20"
-        }
-      ]
-    }
   ],
 
   additionalOptions: [
-    {
-      name: "Custom Menu Requests",
-      description: "Additional cuisine options such as Pakistani, Mexican, and Asian may be available for select events and catering needs.",
-       }
-  ]
+  {
+    type: "cuisine",
+    name: "Cuisine Options",
+    description:
+      "In addition to Afghan cuisine, we offer select Pakistani, Mexican, and Asian dishes, with customizable tray sizes to fit your catering needs."
+  },
+  {
+    type: "tray",
+    name: "Small Tray",
+    serves: "Serves 8–10 people",
+    description: "Ideal for smaller family gatherings."
+  },
+  {
+    type: "tray",
+    name: "Medium Tray",
+    serves: "Serves 12–15 people",
+    description: "Perfect for medium-sized events and parties."
+  },
+  {
+    type: "tray",
+    name: "Large Tray",
+    serves: "Serves 18–20 people",
+    description: "Best for larger gatherings and special occasions."
+  },
+  {
+    type: "note",
+    name: "Important Note",
+    description:
+      "All menu availability, tray sizes, and current pricing can be confirmed by phone, text, or email."
+  }
+] 
 };

@@ -31,24 +31,62 @@ function createAboutCard(item) {
 }
 
 function createAdditionalOptions(items) {
+  const cuisineOption = items.find((item) => item.type === "cuisine");
+  const trayOptions = items.filter((item) => item.type === "tray");
+  const importantNote = items.find((item) => item.type === "note");
+
   return `
-    <div class="menu-card">
+    <div class="menu-card additional-options-card">
       <h3>Additional Catering Options</h3>
-      <ul>
-        ${items
-          .map(
-            (item) => `
-              <li>
-                <div>
-                  <strong>${item.name}</strong>
-                  <p>${item.description}</p>
-                </div>
-                <span>${item.label}</span>
-              </li>
-            `
-          )
-          .join("")}
-      </ul>
+
+      ${
+        cuisineOption
+          ? `
+            <div class="options-block">
+              <p>
+                <strong>${cuisineOption.name} –</strong>
+                ${cuisineOption.description}
+              </p>
+            </div>
+          `
+          : ""
+      }
+
+      ${
+        trayOptions.length
+          ? `
+            <div class="options-block">
+              <h4>Tray Size Options</h4>
+              <div class="tray-options">
+                ${trayOptions
+                  .map(
+                    (item) => `
+                      <div class="tray-card">
+                        <h5>${item.name}</h5>
+                        <p class="tray-serves">${item.serves}</p>
+                        <p>${item.description}</p>
+                      </div>
+                    `
+                  )
+                  .join("")}
+              </div>
+            </div>
+          `
+          : ""
+      }
+
+      ${
+        importantNote
+          ? `
+            <div class="options-block">
+              <p>
+                <strong>${importantNote.name} –</strong>
+                ${importantNote.description}
+              </p>
+            </div>
+          `
+          : ""
+      }
     </div>
   `;
 }
