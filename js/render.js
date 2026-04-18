@@ -21,7 +21,7 @@ function createMenuCard(section) {
   `;
 }
 
-function createAboutCard(item) {
+function createServiceCard(item) {
   return `
     <article class="info-card">
       <h3>${item.title}</h3>

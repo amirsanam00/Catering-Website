@@ -1,10 +1,10 @@
 const siteData = {
   business: {
     name: "Afghani Khowrak Catering",
-    phoneDisplay: "(609) 555-1234",
-    phoneHref: "tel:+16095551234",
-    emailDisplay: "info@afghanikhowrak.com",
-    emailHref: "mailto:info@afghanikhowrak.com",
+    phoneDisplay: "(732) 783-4555",
+    phoneHref: "tel:+17327834555",
+    emailDisplay: "afghanikhowrak@gmail.com",
+    emailHref: "mailto:afghanikhowrak@gmail.com",
     hours: "Mon–Sat: 10:00 AM – 7:00 PM",
     menuPdf: "assets/menu/afghani-khowrak-menu.pdf"
   },
@@ -39,7 +39,7 @@ const siteData = {
           description: "Basmati rice prepared with caramelized sugar and warm spices served with selected entrees."
         },
         {
-          name: "Zamarod Palaw",
+          name: "Zamarod Pulao",
           description: "Basmati rice cooked with spinach and herbs, served with selected entrees."
         },
         {
@@ -134,7 +134,8 @@ const siteData = {
     type: "note",
     name: "Important Note",
     description:
-      "All menu availability, tray sizes, and current pricing can be confirmed by phone, text, or email."
+      "Catering packages designed for groups of all sizes, please reach out for a personalized quote."
+      //  All menu availability, tray sizes, and current pricing can be confirmed by phone, text, or email.
   }
 ] 
 };
