@@ -112,23 +112,35 @@ const siteData = {
     description:
       "In addition to Afghan cuisine, we offer select Pakistani, Mexican, and Asian dishes, with customizable tray sizes to fit your catering needs."
   },
-  {
+  // {
+  //   type: "tray",
+  //   name: "Small Tray",
+  //   serves: "Serves 8–10 people",
+  //   description: "Ideal for smaller family gatherings."
+  // },
+  // {
+  //   type: "tray",
+  //   name: "Medium Tray",
+  //   serves: "Serves 12–15 people",
+  //   description: "Perfect for medium-sized events and parties."
+  // },
+  // {
+  //   type: "tray",
+  //   name: "Large Tray",
+  //   serves: "Serves 18–20 people",
+  //   description: "Best for larger gatherings and special occasions."
+  // },
+    {
     type: "tray",
-    name: "Small Tray",
-    serves: "Serves 8–10 people",
-    description: "Ideal for smaller family gatherings."
+    name: "Half Tray",
+    serves: "",
+    description: ""
   },
   {
     type: "tray",
-    name: "Medium Tray",
-    serves: "Serves 12–15 people",
-    description: "Perfect for medium-sized events and parties."
-  },
-  {
-    type: "tray",
-    name: "Large Tray",
-    serves: "Serves 18–20 people",
-    description: "Best for larger gatherings and special occasions."
+    name: "Full Tray",
+    serves: "",
+    description: ""
   },
   {
     type: "note",
